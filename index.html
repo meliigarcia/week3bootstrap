@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+<!--Bootstrap CSS link-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body>
+
+
+<!--This was the Navbar --><!--The navbar creates a navigation bar on top of your page.The background color is set to green but then to get the text to turn white data theme had to be
+set for dark-->
+  <nav class="navbar navbar-expand-lg"  style="background-color: #004810;" data-bs-theme="dark">
+    <div class="container-fluid"><!--this puts in a class to be able to contain navbar to just the top of page-->
+      <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Plant World</a><!--this link was input to allow users to click on the name of the website and return to the first page/Home-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span><!--created a button for said link above to register to user that they can click on it.-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--created a dropdown menu that can collapse when clicked-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"><!--this styles the dropdown menu to fit aligned to the button created above-->
+          
+          <li class="nav-item dropdown"><!--this is the list detailing the items that will show in the dropdown menu-->
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a><!--this creates a link where the dropdown menu items can be accessed through-->
+            <ul class="dropdown-menu">
+              <!--This styles the menu items as links so when users click on them they can be redirected.-->
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html">Home</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/page2.html">Plant Type</a></li>
+            </ul>
+          </li>
+        </ul>
+  <form class="d-flex" role="search"><!--this creates a form which puts a search bar within the navbar-->
+          <input class="form-control me-2" placeholder="Search" aria-label="Search">
+        <!--this allows for the user to type in the search bar and the me-2 make the margin set to the right and spaces it 0.5-->
+          <button class="btn btn-outline-success" style="background-color: rgb(255, 255, 255);" type="submit">Search</button>
+  </form>
+      </div>
+    </div>
+</nav><!--closes the navbar and components within it-->
+<div class="container text-center"><!--this class adds the container and centers the text within the container-->
+  <div class="row"><!--makes the container into a row allowing both items to align to each other.-->
+    <!--In this column some bootstrap styling, the padding was adjusted from the top and bottom and spaced it by 3 -->
+    <div class="col py-5">
+      <h3>About Us:</h3>
+      <p>Welcome let us be an amazing guide to your garden.</p>
+    </div>
+    <div class="col ms-5"><!--this column's margin was styled to 3 space to the left making the image's margin closer to the edge of the rigth side-->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpQTBeE7ofpw_uLWCbMd2dvQ5hJD-ObZpiw&s" alt="">
+    </div>
+    
+  </div>
+</div>
+<div class="container text-center"><!--this creates another container that centers the items toward the center of the column-->
+  <div class="row">
+    <div class="col"><!--a column of the container-->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQao2lRBUiCXeB4hIMZW82ZQu2JGxnM5JA3IQ&s" alt="">
+    </div>
+    <div class="col"><!--a column of the container-->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR33TPA_faaUyedOU1Pm5PFsxv9k-mRmDEgxg&s" alt="">
+    </div>
+    <div class="col py-5" ><!--this column was styled by making the padding on the top and bottom to space 3-->
+      <p>Fun Fact: Plants have a circadian rhythm, similar to humans, that allows them to prepare for different times of the day.</p>
+    </div>
+  </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script><!--allows js to be recognized by document to make certain items functional-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+    
+
+</html>

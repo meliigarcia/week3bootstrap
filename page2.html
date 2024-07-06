@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+<!--Bootstrap CSS link-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<!--This was the Navbar --><!--The navbar creates a navigation bar on top of your page.The background color is set to green but then to get the text to turn white data theme had to b
+set for dark, as well as makes any items clicked on show a shadow -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #004810;" data-bs-theme="dark">
+    <div class="container-fluid"><!--this puts in a class to be able to contain navbar to just the top of page-->
+      <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Plant World</a><!--this link was input to allow users to click on the name of the website and return to the first page/Home-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span><!--created a button for said link above to register to user that they can click on it.-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--created a dropdown menu that can collapse when clicked-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"><!--this styles the dropdown menu to fit aligned to the button created above-->
+          
+          <li class="nav-item dropdown"><!--this is the list detailing the items that will show in the dropdown menu-->
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a><!--this creates a link where the dropdown menu items can be accessed through-->
+            <ul class="dropdown-menu">
+              <!--This styles the menu items as links so when users click on them they can be redirected.-->
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/index.html">Home</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/page2.html">Plant Type</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search"><!--this creates a form which puts a search bar within the navbar-->
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <!--this allows for the user to type in the search bar and the me-2 make the margin set to the right and spaces it 0.5-->
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    </nav><!--closes the navbar and components within it-->
+
+      <h3 class="text-center pt-5 pb-1">Low Maintenance Indoor Plants</h3><!--In this header the padding was adjusted on top and bottom but were different value which is why there more than one padding adjustment -->
+    <table class="table table-hover w-auto mx-auto"><!--this tabled was set to be a hover list so when the user hovers over the text the table shows a shadow-->
+      
+        <thead class="text-center thead-light"><!--the style here was adjusted to have text center and to have the header be darker than the rest of the list which is what thead-light does-->
+          <tr>
+            <th scope="col">Plant Name</th>
+          </tr>
+        </thead>
+        <tbody">
+          <tr>
+            <td>Jade Plant (Crassula ovata)</td>
+          </tr>
+          <tr>
+            <td>Gasteria (Gasteria spp.)</td>
+          </tr>
+          <tr>
+            <td>African Milk Tree (Euphorbia trigona)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button py-5 px-5"><!--added padding all around button-->
+        <h5>Surprise!</h5>
+        <input type="button"  onclick="alert('You are amazing!')" value="Click Me!" ><!--makes the button function-->
+      </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script><!--allows js to be recognized by document to make certain items functional-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
